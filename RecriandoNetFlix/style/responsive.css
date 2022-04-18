@@ -1,0 +1,89 @@
+/*
+Dev nome: Marcelo Olimpio
+ Empresa: Wbsys
+ Url:https://www.wbsys.com.br
+ Tel:4199276-4459  
+ */
+@media screen and (max-width:1000px){
+    header nav a{
+        font-size: 16px;
+    }
+    .filmePrincipal .container .titulo{
+        font-size: 50px;
+
+    }
+
+    .filmePrincipal .container .descricao{
+        font-size: 14px;
+        margin-bottom: 80px;
+    }
+    .filmePrincipal{
+       
+        height: 400px;
+        }
+
+        .botoes{
+            margin-top: 40px;
+            
+        }
+
+
+        .botao{
+            padding: 10px;
+            border-radius: 3px;
+            margin: 5px;
+            font-size: 12px;
+            
+        }
+        .botao:hover{
+            
+            padding: 10px;
+            border-radius: 3px;
+            margin: 5px;
+        
+        }
+        
+
+}
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    header nav a{
+        font-size: 14px;
+    }
+    .filmePrincipal .container .titulo{
+        font-size: 30px;
+
+    }
+
+    .filmePrincipal .container .descricao{
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+    .filmePrincipal{
+       
+        height: 300px;
+        }
+
+        .botoes{
+            margin-top: 5px;
+            
+        }
+        .botao{
+            padding: 8px;
+            border-radius: 3px;
+            margin: 3px;
+            font-size: 10px;
+            
+        }
+        .botao:hover{
+            
+            padding: 8px;
+            border-radius: 3px;
+            margin: 3px;
+        
+        }
+
+}

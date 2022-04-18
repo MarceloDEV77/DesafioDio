@@ -1,0 +1,109 @@
+<!-----------
+ Dev nome: Marcelo Olimpio
+ Empresa: Wbsys
+ Url:https://www.wbsys.com.br
+ Tel:4199276-4459   
+ ---------->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Netflix.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="./style/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/Owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <title>Netflix Clone</title>
+</head>
+<body>
+  <header>
+     <div class="container">
+         <a href="#"><h2 class="logo" >NETFLIX</h2></a>
+         <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Documentários</a>
+         </nav>
+     </div>
+  </header>
+ <main>
+     <div class="filmePrincipal">
+        <div class="container">
+           <h3 class="titulo">The Get Down</h3>
+           <p class="descricao"> 
+            Ambientada em Nova York durante o ano de 1977, The Get Down conta a história de como, 
+            à beira das ruínas e da falência, a grande metrópole deu origem a um novo movimento 
+            musical no Bronx, focado nos jovens negros e de minorias que são marginalizados. 
+            Entre o surgimento do hip-hop e os últimos dias da Disco Music, a história se costura 
+            ao redor das vidas dos moradores do Bronx e de sua relação com arte, música, dança, 
+            latas de spray, política, religião e Manhattan.
+           </p>
+        </div> 
+        <div class="botoes">
+         <button role="button" onclick="assistir()" class="botao"> <img class="icon" src="./img/play.svg" alt="">ASSISTIR AGORA</button>
+         <button role="button" class="botao"><img class="icon" src="./img/info.svg" alt="">MAIS INFORMAÇÕES</button>
+         <script>
+      function assistir(){
+        window.location.href = "./getdown.html ";
+      }
+
+         </script>
+        </div>
+     </div>
+ </main>
+ <div class="carrosel-filmes">
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img class="box-filmes" src="img/capas/mini1.jpg" alt="">
+    </div>
+<div class="item"><img class="box-filmes" src="./img/capas/mini2.jpg" alt=""></div>
+<div class="item"><img class="box-filmes" src="./img/capas/mini3.jpg" alt=""></div>
+<div class="item"><img class="box-filmes" src="./img/capas/mini4.jpg" alt=""></div>
+<div class="item"><img class="box-filmes" src="./img/capas/mini5.jpg" alt=""></div>
+<div class="item"><img class="box-filmes" src="./img/capas/mini6.jpg" alt=""></div>
+<div class="item"><img class="box-filmes" src="./img/capas/mini7.jpg" alt=""></div>
+<div class="item"><img class="box-filmes" src="./img/capas/mini8.jpg" alt=""></div>
+<div class="item"><img class="box-filmes" src="./img/capas/mini9.jpg" alt=""></div>
+<div class="item"><img class="box-filmes" src="./img/capas/mini10.jpg" alt=""></div>
+<div class="item"><img class="box-filmes" src="./img/capas/mini11.jpg" alt=""></div>
+<div class="item"><img class="box-filmes" src="./img/capas/mini12.jpg" alt=""></div>
+
+
+</div>
+ </div>
+ 
+ <script src="./js/Owl/jquery.min.js"></script>
+ <script src="./js/Owl/owl.carousel.min.js"></script>
+<!------------
+Só para esclarecer o plugin do slider
+não funcionou por anexo, tive que colocar direto na pagina 
+------------->
+ <script type="text/javascript">
+     $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:15,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+     });
+
+ </script>
+</body>
+</html>
