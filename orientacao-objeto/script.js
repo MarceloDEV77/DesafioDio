@@ -72,3 +72,30 @@ sacar (valor){
 }
 
 }
+
+class Post {
+
+    constructor(tipo, titulo, usuario, content,comentario){
+      this.tipo       =  tipo;
+      this.titulo     =  titulo;
+      this.usuario    =  usuario;
+      this.content    =  content; 
+      this.comentario =  comentario;
+      
+    }
+
+    get titulo(){
+        return this.titulo;
+    }
+
+    get postagem (){
+    post ={
+        titulo:this.titulo,
+        usuario:this.usuario,
+        content:this.content,
+        comentario:this.comentario
+    }
+    return this.post;
+    }
+   
+}
